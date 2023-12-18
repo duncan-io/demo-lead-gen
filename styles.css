@@ -6,6 +6,17 @@
     line-height: 1.75rem;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #F0FFFF;;
+}
+
+main{
+    align-self: self-start;
+}
 
 nav{
     display: flex;
@@ -39,6 +50,14 @@ nav{
 .logo{
     color: #71F79F;
 }
+
+.logoLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 main{
     padding: 0;
     margin:0;
@@ -47,9 +66,9 @@ main{
 .header{
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
     padding: 20px;
-   
     margin: 0;
 }
 
@@ -72,6 +91,11 @@ main{
 .cta{
     text-align: center;
     padding: 20px;
+}
+
+.cta a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .cta button{
@@ -123,7 +147,107 @@ main{
     flex-direction: row-reverse;
 }
 
+.secondaryButton{
+    padding: .2rem .5rem;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.secondaryButton:hover{
+    background-color: #3DD6D0;
+    color: white;
+    
+}
+
+.secondaryButton a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Contact Us Styling */
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    width: 50%;
+}
+
+/* About Us Styling */
+
+.about{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.about h2{
+    margin: 1rem 0;
+}
+.aboutUsHeader{
+    color: white;
+    background-color: #15B097;
+    padding: 20px;
+    text-align: center;;
+}
+
+.services{
+    width: 50%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 20px;
+    list-style-type:"» ";
+    text-align: left;
+}
+
+.team{
+    align-self: center;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 20px;
+    align-items: center;
+    list-style: none;
+    width: 70%;
+}
+
+.team li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.15rem;
+
+}
+
+.profileImg{
+    width:50%;
+    border-radius: 100%;
+}
+
+.teamInfo{
+    width: 50%;
+    text-align: left;
+}
+
+
 footer{
+    border-top: 1px solid gray;
     text-align: center;
     padding: 20px;
 }
